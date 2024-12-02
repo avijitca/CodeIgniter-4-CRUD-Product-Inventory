@@ -30,6 +30,8 @@ Clone this repository to your local machine:
 git clone https://github.com/avijitca/CodeIgniter-4-CRUD-Product-Inventory.git
 cd <repository-name>
 
+---
+
 
 ### Step 2: Install Dependencies
 Install the project dependencies using Composer:
