@@ -1,0 +1,192 @@
+ERROR - 2024-11-29 00:06:50 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\xampp8.2\htdocs\test_cdnt\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 E:\xampp8.2\htdocs\test_cdnt\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'inventory_syste...', 3306, '', 0)
+#1 E:\xampp8.2\htdocs\test_cdnt\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp8.2\htdocs\test_cdnt\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp8.2\htdocs\test_cdnt\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.`na...', Array, false)
+#4 E:\xampp8.2\htdocs\test_cdnt\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp8.2\htdocs\test_cdnt\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xampp8.2\htdocs\test_cdnt\app\Controllers\Products.php(23): CodeIgniter\BaseModel->findAll()
+#7 E:\xampp8.2\htdocs\test_cdnt\system\CodeIgniter.php(933): App\Controllers\Products->index()
+#8 E:\xampp8.2\htdocs\test_cdnt\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#9 E:\xampp8.2\htdocs\test_cdnt\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp8.2\htdocs\test_cdnt\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 E:\xampp8.2\htdocs\test_cdnt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 E:\xampp8.2\htdocs\test_cdnt\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\xampp8.2\htdocs\test_cdnt\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 E:\xampp8.2\htdocs\test_cdnt\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp8.2\htdocs\test_cdnt\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp8.2\htdocs\test_cdnt\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.`na...', Array, false)
+#3 E:\xampp8.2\htdocs\test_cdnt\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xampp8.2\htdocs\test_cdnt\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xampp8.2\htdocs\test_cdnt\app\Controllers\Products.php(23): CodeIgniter\BaseModel->findAll()
+#6 E:\xampp8.2\htdocs\test_cdnt\system\CodeIgniter.php(933): App\Controllers\Products->index()
+#7 E:\xampp8.2\htdocs\test_cdnt\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#8 E:\xampp8.2\htdocs\test_cdnt\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp8.2\htdocs\test_cdnt\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 E:\xampp8.2\htdocs\test_cdnt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\xampp8.2\htdocs\test_cdnt\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-29 00:06:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: product-list]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `pd`.`name` `product_name`, `pd`.`price`, `pd`.`stock_status`, `pd`.`created_at`, `pc`.`item`, `us`.`name` `user_name`
+FROM `products` `pd`
+LEFT JOIN `product_category` `pc` ON `pd`.`product_category_id`=`pc`.`id`
+LEFT JOIN `users` `us` ON `pd`.`created_by`=`us`.`id`
+ORDER BY `pd`.`id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Products.php(23): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-29 02:08:37 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: create-product]
+in APPPATH\Views\create_product.php on line 25.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('create_product', [], true)
+ 4 APPPATH\Controllers\Products.php(38): view('create_product', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->create_product()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-29 02:10:33 --> ErrorException: Undefined array key "item"
+[Method: GET, Route: create-product]
+in APPPATH\Views\create_product.php on line 25.
+ 1 APPPATH\Views\create_product.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item"', 'E:\\xampp8.2\\htdocs\\test_cdnt\\app\\Views\\create_product.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\xampp8.2\\htdocs\\test_cdnt\\app\\Views\\create_product.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('create_product', [], true)
+ 5 APPPATH\Controllers\Products.php(38): view('create_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->create_product()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-29 02:28:35 --> ErrorException: Undefined variable $title
+[Method: GET, Route: create-product]
+in APPPATH\Views\layout.php on line 6.
+ 1 APPPATH\Views\layout.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'E:\\xampp8.2\\htdocs\\test_cdnt\\app\\Views\\layout.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\xampp8.2\\htdocs\\test_cdnt\\app\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layout', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('create_product', [], true)
+ 6 APPPATH\Controllers\Products.php(43): view('create_product', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->create_product()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-29 15:52:08 --> ErrorException: Undefined variable $error
+[Method: GET, Route: create-product]
+in APPPATH\Views\create_product.php on line 14.
+ 1 APPPATH\Views\create_product.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'E:\\xampp8.2\\htdocs\\test_cdnt\\app\\Views\\create_product.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\xampp8.2\\htdocs\\test_cdnt\\app\\Views\\create_product.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('create_product', [], true)
+ 5 APPPATH\Controllers\Products.php(43): view('create_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->create_product()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-29 16:37:48 --> Error: Call to undefined method App\Controllers\Products::validation()
+[Method: POST, Route: create-product]
+in APPPATH\Controllers\Products.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->create_product()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-29 16:59:40 --> mysqli_sql_exception: MySQL server has gone away in E:\xampp8.2\htdocs\test_cdnt\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 E:\xampp8.2\htdocs\test_cdnt\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\xampp8.2\htdocs\test_cdnt\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\xampp8.2\htdocs\test_cdnt\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\xampp8.2\htdocs\test_cdnt\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 E:\xampp8.2\htdocs\test_cdnt\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp8.2\htdocs\test_cdnt\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp8.2\htdocs\test_cdnt\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp8.2\htdocs\test_cdnt\app\Controllers\Products.php(62): CodeIgniter\Model->insert(Array)
+#8 E:\xampp8.2\htdocs\test_cdnt\system\CodeIgniter.php(933): App\Controllers\Products->create_product()
+#9 E:\xampp8.2\htdocs\test_cdnt\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#10 E:\xampp8.2\htdocs\test_cdnt\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp8.2\htdocs\test_cdnt\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp8.2\htdocs\test_cdnt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 E:\xampp8.2\htdocs\test_cdnt\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-11-29 16:59:40 --> CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+[Method: POST, Route: create-product]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`name`, `product_category_id`, `price`, `stock_status`) VALUES (:name:, :product_category_id:, :price:, :stock_status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Products.php(62): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->create_product()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-29 16:59:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products` (`name`, `product_category_id`, `price`, `stock_status`) VALUES (\'Kid\\\'s Pants White\', \'3\', \'30\', \'in_stock\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products` (`name`, `product_category_id`, `price`, `stock_status`) VALUES (\'Kid\\\'s Pants White\', \'3\', \'30\', \'in_stock\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`name`, `product_category_id`, `price`, `stock_status`) VALUES (:name:, :product_category_id:, :price:, :stock_status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Products.php(62): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->create_product()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-29 16:59:40 --> [Caused by] mysqli_sql_exception: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `products` (`name`, `product_category_id`, `price`, `stock_status`) VALUES (\'Kid\\\'s Pants White\', \'3\', \'30\', \'in_stock\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products` (`name`, `product_category_id`, `price`, `stock_status`) VALUES (\'Kid\\\'s Pants White\', \'3\', \'30\', \'in_stock\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products` (`name`, `product_category_id`, `price`, `stock_status`) VALUES (\'Kid\\\'s Pants White\', \'3\', \'30\', \'in_stock\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`name`, `product_category_id`, `price`, `stock_status`) VALUES (:name:, :product_category_id:, :price:, :stock_status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Products.php(62): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->create_product()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-29 17:41:23 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: product-list]
+in APPPATH\Views\products.php on line 39.
+ 1 APPPATH\Views\products.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'E:\\xampp8.2\\htdocs\\test_cdnt\\app\\Views\\products.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\xampp8.2\\htdocs\\test_cdnt\\app\\Views\\products.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products', [], true)
+ 5 APPPATH\Controllers\Products.php(25): view('products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
