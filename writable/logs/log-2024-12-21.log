@@ -1,0 +1,84 @@
+CRITICAL - 2024-12-21 15:52:38 --> Error: Class "Mpdf\Mpdf" not found
+[Method: GET, Route: products/pdf]
+in APPPATH\Controllers\Products.php on line 243.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->downloadPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-21 15:55:06 --> Error: Class "Mpdf" not found
+[Method: GET, Route: products/pdf]
+in APPPATH\Controllers\Products.php on line 243.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->downloadPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-21 15:55:15 --> Error: Class "Mpdf" not found
+[Method: GET, Route: products/pdf]
+in APPPATH\Controllers\Products.php on line 243.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->downloadPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-21 15:57:26 --> Error: Class "Mpdf\Mpdf" not found
+[Method: GET, Route: products/pdf]
+in APPPATH\Controllers\Products.php on line 243.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->downloadPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-21 16:05:43 --> ErrorException: require_once(E:\xampp8.2\htdocs\product_inventory\app\Libraries/mpdf/src/Mpdf.php): Failed to open stream: No such file or directory
+[Method: GET, Route: products/pdf]
+in APPPATH\Libraries\mpdfloader.php on line 4.
+ 1 APPPATH\Libraries\mpdfloader.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(E:\\xampp8.2\\htdocs\\product_inventory\\app\\Libraries/mpdf/src/Mpdf.php): Failed to open stream: No such file or directory', 'E:\\xampp8.2\\htdocs\\product_inventory\\app\\Libraries\\mpdfloader.php', 4)
+ 2 APPPATH\Libraries\mpdfloader.php(4): require_once()
+ 3 APPPATH\Controllers\Products.php(3): require_once('E:\\xampp8.2\\htdocs\\product_inventory\\app\\Libraries\\mpdfloader.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('E:\\xampp8.2\\htdocs\\product_inventory\\app\\Controllers\\Products.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp8.2\\htdocs\\product_inventory\\app\\Controllers\\Products.php')
+ 6 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Products')
+ 7 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Products')
+ 8 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Products', true)
+ 9 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-21 16:06:49 --> ErrorException: Trait "Mpdf\Strict" not found
+[Method: GET, Route: products/pdf]
+in APPPATH\Libraries\mpdf\mpdf\src\Mpdf.php on line 28.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-21 16:44:30 --> ErrorException: Trait "Mpdf\Strict" not found
+[Method: GET, Route: products/pdf]
+in APPPATH\Libraries\mpdf\src\Mpdf.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-21 16:44:37 --> ErrorException: Trait "Mpdf\Strict" not found
+[Method: GET, Route: products/pdf]
+in APPPATH\Libraries\mpdf\src\Mpdf.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-21 16:44:39 --> ErrorException: Trait "Mpdf\Strict" not found
+[Method: GET, Route: product-list]
+in APPPATH\Libraries\mpdf\src\Mpdf.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-21 16:44:43 --> ErrorException: Trait "Mpdf\Strict" not found
+[Method: GET, Route: product-list]
+in APPPATH\Libraries\mpdf\src\Mpdf.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-21 16:44:48 --> ErrorException: Trait "Mpdf\Strict" not found
+[Method: GET, Route: product-list]
+in APPPATH\Libraries\mpdf\src\Mpdf.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-21 16:45:20 --> ErrorException: Trait "Mpdf\Strict" not found
+[Method: GET, Route: product-list]
+in APPPATH\Libraries\mpdf\src\Mpdf.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-21 16:45:39 --> ErrorException: Trait "Mpdf\Strict" not found
+[Method: GET, Route: products/pdf]
+in APPPATH\Libraries\mpdf\src\Mpdf.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

@@ -1,0 +1,30 @@
+CRITICAL - 2024-12-16 00:51:30 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: all-users]
+in APPPATH\Views\users\index.php on line 55.
+ 1 APPPATH\Views\users\index.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'E:\\xampp8.2\\htdocs\\product_inventory\\app\\Views\\users\\index.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\xampp8.2\\htdocs\\product_inventory\\app\\Views\\users\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('users/index', [], true)
+ 5 APPPATH\Controllers\Users.php(15): view('users/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-16 00:51:44 --> CodeIgniter\Pager\Exceptions\PagerException: "simple_pager" is not a valid Pager template.
+[Method: GET, Route: all-users]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('simple_pager')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'simple_pager')
+ 3 APPPATH\Views\users\index.php(55): CodeIgniter\Pager\Pager->links('default', 'simple_pager')
+ 4 SYSTEMPATH\View\View.php(234): include('E:\\xampp8.2\\htdocs\\product_inventory\\app\\Views\\users\\index.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('users/index', [], true)
+ 7 APPPATH\Controllers\Users.php(20): view('users/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

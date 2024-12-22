@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\xampp8.2\\htdocs\\product_inventory\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\xampp8.2\\htdocs\\product_inventory\\app\\Controllers\\Products.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Controllers\\Products.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 335,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Products.php",
+              "DocumentMoniker": "E:\\xampp8.2\\htdocs\\product_inventory\\app\\Controllers\\Products.php",
+              "RelativeDocumentMoniker": "app\\Controllers\\Products.php",
+              "ToolTip": "E:\\xampp8.2\\htdocs\\product_inventory\\app\\Controllers\\Products.php",
+              "RelativeToolTip": "app\\Controllers\\Products.php",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-04T16:03:06.503Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

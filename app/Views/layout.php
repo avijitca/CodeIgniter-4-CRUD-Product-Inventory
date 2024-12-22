@@ -22,9 +22,62 @@
         <div class="row h-100 justify-content-center align-items-center">
             <div class="col-md-8 text-center">
                 <a style="text-decoration: none;" href="<?= base_url('product-list') ?>">
-                <h1 class="display-7">CodeIgniter 4 CRUD Project</h1>
+                <h1 class="display-7">Inventory System</h1>
                 </a>
-                <p class="lead">This page shows list of products.</p>
+                <!-- Nav bar and menu -->
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e7e7e7;">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="<?= base_url('product-list') ?>">INV Sys</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="<?= base_url('product-list') ?>">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Users
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="<?= base_url('all-users') ?>">All Users</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('add-user') ?>">Add User</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="<?= base_url('product-list') ?>">All Products</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('create-product') ?>">Add Product</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="<?= base_url('bulk-add') ?>">Add Bulk Products</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Orders
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">All Orders</a></li>
+                            <li><a class="dropdown-item" href="#">Create Order</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <a href="<?= base_url('logout') ?>">
+                        <button class="btn btn-outline-danger" type="button">Logout</button>
+                    </a>
+                    </div>
+                </div>
+            </nav>
+                <!-- Nav bar and menu Ends-->
                 
                 <?= $this->renderSection('content') ?>
             </div>

@@ -12,7 +12,7 @@
     <form name="crud_form" method="post" action="<?= base_url('update-product/'.$product['id'])  ?>">
         <h4>Update a Product</h4>
         <hr>
-    <table>
+    <table class="table">
         <tr>
             <td><b>Item Name:</b></td>
             <td>

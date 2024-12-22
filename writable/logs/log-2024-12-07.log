@@ -1,0 +1,70 @@
+CRITICAL - 2024-12-07 02:51:12 --> Error: Class "Codeigniter\Model" not found
+[Method: GET, Route: /]
+in APPPATH\Models\Users_model.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp8.2\\htdocs\\product_inventory\\app\\Models\\Users_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Users_model')
+ 4 APPPATH\Controllers\Users.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Users_model')
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Users->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-07 02:52:11 --> Error: Class "Codeigniter\Model" not found
+[Method: GET, Route: /]
+in APPPATH\Models\Users_model.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp8.2\\htdocs\\product_inventory\\app\\Models\\Users_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Users_model')
+ 4 APPPATH\Controllers\Users.php(8): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Users_model')
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Users->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-07 02:52:55 --> Error: Class "Codeigniter\Model" not found
+[Method: GET, Route: /]
+in APPPATH\Models\Users_model.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp8.2\\htdocs\\product_inventory\\app\\Models\\Users_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Users_model')
+ 4 APPPATH\Controllers\Users.php(8): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Users_model')
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Users->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-07 18:05:29 --> ErrorException: Undefined variable $users_model
+[Method: POST, Route: login]
+in APPPATH\Controllers\Users.php on line 30.
+ 1 APPPATH\Controllers\Users.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users_model', 'E:\\xampp8.2\\htdocs\\product_inventory\\app\\Controllers\\Users.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-07 18:26:00 --> ErrorException: Undefined variable $db
+[Method: POST, Route: login]
+in APPPATH\Models\Users_model.php on line 14.
+ 1 APPPATH\Models\Users_model.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'E:\\xampp8.2\\htdocs\\product_inventory\\app\\Models\\Users_model.php', 14)
+ 2 APPPATH\Controllers\Users.php(31): App\Models\Users_model->get_user('fsdf', 'c1fedb2d17ca40af1c27252646d8be48')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->login()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-07 18:45:30 --> ErrorException: Undefined property: App\Controllers\Users::$session
+[Method: POST, Route: login]
+in APPPATH\Controllers\Users.php on line 39.
+ 1 APPPATH\Controllers\Users.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Users::$session', 'E:\\xampp8.2\\htdocs\\product_inventory\\app\\Controllers\\Users.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

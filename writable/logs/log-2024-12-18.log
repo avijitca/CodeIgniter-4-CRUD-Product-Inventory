@@ -1,0 +1,77 @@
+CRITICAL - 2024-12-18 01:06:49 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "phpA322.tmp" to "E:\xampp8.2\htdocs\product_inventory\writable\uploads/". Reason: 
+[Method: POST, Route: bulk-add]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 154.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpA322.tmp', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\Products.php(168): CodeIgniter\HTTP\Files\UploadedFile->move('E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/1734484009_ec2a56bc1ce8bb1b4fdf.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->bulk_add()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 01:08:27 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "php2251.tmp" to "E:\xampp8.2\htdocs\product_inventory\writable\uploads/". Reason: 
+[Method: POST, Route: bulk-add]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 154.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php2251.tmp', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\Products.php(168): CodeIgniter\HTTP\Files\UploadedFile->move('E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/1734484107_0cc3f0bd52e756819435.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->bulk_add()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 01:08:29 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "php2C16.tmp" to "E:\xampp8.2\htdocs\product_inventory\writable\uploads/". Reason: 
+[Method: POST, Route: bulk-add]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 154.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php2C16.tmp', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\Products.php(168): CodeIgniter\HTTP\Files\UploadedFile->move('E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/1734484109_ff1dcfdbc0980049dd0d.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->bulk_add()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 01:08:40 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "php56B1.tmp" to "E:\xampp8.2\htdocs\product_inventory\writable\uploads/". Reason: 
+[Method: POST, Route: bulk-add]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 154.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php56B1.tmp', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\Products.php(168): CodeIgniter\HTTP\Files\UploadedFile->move('E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/1734484120_dd09b2076f6f90034f03.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->bulk_add()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 01:10:26 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "phpF407.tmp" to "E:\xampp8.2\htdocs\product_inventory\writable\uploads/". Reason: 
+[Method: POST, Route: bulk-add]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 154.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpF407.tmp', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\Products.php(168): CodeIgniter\HTTP\Files\UploadedFile->move('E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/abcd')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->bulk_add()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 01:17:58 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "phpDA25.tmp" to "E:\xampp8.2\htdocs\product_inventory\writable\uploads/". Reason: 
+[Method: POST, Route: bulk-add]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 154.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpDA25.tmp', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\Products.php(168): CodeIgniter\HTTP\Files\UploadedFile->move('E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/1734484678_b04072bc41c8e9226a0e.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->bulk_add()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-18 01:18:08 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "php107.tmp" to "E:\xampp8.2\htdocs\product_inventory\writable\uploads/". Reason: 
+[Method: POST, Route: bulk-add]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 154.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php107.tmp', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\Products.php(168): CodeIgniter\HTTP\Files\UploadedFile->move('E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/1734484688_f35525e5b6cef8036c07.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->bulk_add()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

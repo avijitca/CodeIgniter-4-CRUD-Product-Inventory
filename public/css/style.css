@@ -16,3 +16,39 @@ body {
 h1 {
     color: #535454;
 }
+.pagination-links {
+    text-align: center; /* Center the pagination block */
+    margin: 20px 0; /* Add space around pagination */
+}
+
+.pagination {
+    display: inline-block; /* Keep pagination links inline */
+    list-style: none; /* Remove default bullets from the list */
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li {
+    display: inline; /* Keep list items inline */
+    margin: 0 5px; /* Add space between pagination links */
+}
+
+.pagination li a {
+    text-decoration: none; /* Remove underline */
+    color: #0a0808; /* Default link color */
+    padding: 8px 12px; /* Add padding around link */
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Add smooth hover effect */
+}
+
+.pagination li.active a {
+    background-color: #aeaeae; /* Active link background */
+    color: #0a0808; /* Active link text color */
+    border-color: #007bff; /* Active link border color */
+}
+
+.pagination li a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff; /* White text on hover */
+}

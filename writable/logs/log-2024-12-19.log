@@ -1,0 +1,50 @@
+CRITICAL - 2024-12-19 00:30:20 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "phpB73B.tmp" to "E:\xampp8.2\htdocs\product_inventory\writable\uploads/". Reason: 
+[Method: POST, Route: bulk-add]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 154.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpB73B.tmp', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\Products.php(168): CodeIgniter\HTTP\Files\UploadedFile->move('E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/', 'E:\\xampp8.2\\htdocs\\product_inventory\\writable\\uploads/1734568220_ab98d3ccb23ecaa84d56.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->bulk_add()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-19 02:29:25 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: products_api]
+in SYSTEMPATH\BaseModel.php on line 1833.
+ 1 SYSTEMPATH\BaseModel.php(1833): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(806): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Controllers\Products_api.php(17): CodeIgniter\Model->insert([])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products_api->create()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products_api))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-19 02:32:13 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: products_api]
+in SYSTEMPATH\BaseModel.php on line 1833.
+ 1 SYSTEMPATH\BaseModel.php(1833): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(806): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Controllers\Products_api.php(18): CodeIgniter\Model->insert([])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products_api->create()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products_api))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-19 02:34:06 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: products_api]
+in SYSTEMPATH\BaseModel.php on line 1833.
+ 1 SYSTEMPATH\BaseModel.php(1833): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(806): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Controllers\Products_api.php(18): CodeIgniter\Model->insert([])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products_api->create()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products_api))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

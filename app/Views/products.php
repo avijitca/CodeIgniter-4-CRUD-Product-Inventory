@@ -1,16 +1,17 @@
 <?= $this->extend('layout') ?>
 <?= $this->section('content') ?>
 
-<div class="d-flex justify-content-end">
-    <a href="<?= base_url('create-product') ?>" class="btn btn-dark">Add Product</a>
-</div>
 <div class="col-sm-12">
     <?php if (session()->getFlashdata('success')){ ?>
     <div class="alert alert-success">
         <?= session()->getFlashdata('success') ?>
     </div>
     <?php } ?>
+    <br />
     <h4>List of all Products</h4>
+    <div class="d-flex justify-content-end">
+      <a href="<?= base_url('create-product') ?>" class="btn btn-dark">Add Product</a>
+    </div>
     <table class="table">
       <thead class="thead-dark">
         <tr>
@@ -48,5 +49,14 @@
         ?>
       </tbody>
     </table>
+    <!-- Render pagination links -->
+    <div class="pagination-links">
+        <?= $pager ?>
+    </div>
+    <div class="d-flex justify-content-end">
+      <a href="<?= base_url('products/pdf') ?>" class="btn btn-dark">Download PDF</a> 
+      &nbsp;
+      <a href="<?= base_url('products/excel') ?>" class="btn btn-dark">Download Excel</a>
+    </div>
 </div>
 <?= $this->endSection() ?>

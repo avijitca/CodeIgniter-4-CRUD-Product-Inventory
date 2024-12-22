@@ -11,7 +11,7 @@
     <?php } ?>
     <form name="crud_form" method="post" action="<?= base_url('create-product')  ?>">
         <h4>Add a new Product</h4>
-    <table>
+    <table class="table">
         <tr>
             <td><b>Item Name:</b></td>
             <td>
