@@ -1,4 +1,4 @@
-# Product Inventory CRUD Application with CodeIgniter 4
+# Product Inventory Application with CodeIgniter 4
 
 This is a basic CRUD (Create, Read, Update, Delete) application built using **PHP 8.2** and **CodeIgniter 4**. The project demonstrates the implementation of CRUD operations with server-side validation, Bootstrap for UI styling, and a simple relational database.
 
