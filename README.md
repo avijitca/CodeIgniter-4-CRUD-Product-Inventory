@@ -5,10 +5,14 @@ This is a basic CRUD (Create, Read, Update, Delete) application built using **PH
 ---
 
 ## Features
-- Product listing.
-- Create new products with validation.
-- Edit and update existing products.
-- Delete products with confirmation.
+- Login functionality.
+- User management (CRUD).
+- Pagination for product listing.
+- Implemented RESTful API.
+- Bulk product upload via CSV or Excel files.
+- Export product list to PDF and Excel formats.
+- Improved code structure and styling.
+- Menu to navigate through the application
 - CodeIgniter 4's model, controller, and routing structure.
 
 ---
